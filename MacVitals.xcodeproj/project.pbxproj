@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D85C524D2D7FB88D00EE9FD6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */; };
+		D85C524F2D7FB88D00EE9FD6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */; };
+		D85C525D2D7FB88F00EE9FD6 /* MCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D85C52192D7FB76100EE9FD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = D85C52062D7FB76000EE9FD6;
 			remoteInfo = MacVitals;
 		};
+		D85C525B2D7FB88F00EE9FD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85C51FF2D7FB76000EE9FD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D85C52492D7FB88D00EE9FD6;
+			remoteInfo = MCWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D85C52622D7FB88F00EE9FD6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D85C525D2D7FB88F00EE9FD6 /* MCWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D85C52072D7FB76000EE9FD6 /* MacVitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacVitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85C52182D7FB76100EE9FD6 /* MacVitalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacVitalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85C52222D7FB76100EE9FD6 /* MacVitalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacVitalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MCWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D85C525E2D7FB88F00EE9FD6 /* Exceptions for "MCWidget" folder in "MCWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D85C52092D7FB76000EE9FD6 /* MacVitals */ = {
@@ -43,6 +83,14 @@
 		D85C52252D7FB76100EE9FD6 /* MacVitalsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MacVitalsUITests;
+			sourceTree = "<group>";
+		};
+		D85C52502D7FB88D00EE9FD6 /* MCWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D85C525E2D7FB88F00EE9FD6 /* Exceptions for "MCWidget" folder in "MCWidgetExtension" target */,
+			);
+			path = MCWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D85C52472D7FB88D00EE9FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85C524F2D7FB88D00EE9FD6 /* SwiftUI.framework in Frameworks */,
+				D85C524D2D7FB88D00EE9FD6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				D85C52092D7FB76000EE9FD6 /* MacVitals */,
 				D85C521B2D7FB76100EE9FD6 /* MacVitalsTests */,
 				D85C52252D7FB76100EE9FD6 /* MacVitalsUITests */,
+				D85C52502D7FB88D00EE9FD6 /* MCWidget */,
+				D85C524B2D7FB88D00EE9FD6 /* Frameworks */,
 				D85C52082D7FB76000EE9FD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				D85C52072D7FB76000EE9FD6 /* MacVitals.app */,
 				D85C52182D7FB76100EE9FD6 /* MacVitalsTests.xctest */,
 				D85C52222D7FB76100EE9FD6 /* MacVitalsUITests.xctest */,
+				D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D85C524B2D7FB88D00EE9FD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */,
+				D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				D85C52032D7FB76000EE9FD6 /* Sources */,
 				D85C52042D7FB76000EE9FD6 /* Frameworks */,
 				D85C52052D7FB76000EE9FD6 /* Resources */,
+				D85C52622D7FB88F00EE9FD6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D85C525C2D7FB88F00EE9FD6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D85C52092D7FB76000EE9FD6 /* MacVitals */,
@@ -163,6 +234,28 @@
 			productReference = D85C52222D7FB76100EE9FD6 /* MacVitalsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85C525F2D7FB88F00EE9FD6 /* Build configuration list for PBXNativeTarget "MCWidgetExtension" */;
+			buildPhases = (
+				D85C52462D7FB88D00EE9FD6 /* Sources */,
+				D85C52472D7FB88D00EE9FD6 /* Frameworks */,
+				D85C52482D7FB88D00EE9FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D85C52502D7FB88D00EE9FD6 /* MCWidget */,
+			);
+			name = MCWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MCWidgetExtension;
+			productReference = D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = D85C52062D7FB76000EE9FD6;
 					};
+					D85C52492D7FB88D00EE9FD6 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = D85C52022D7FB76000EE9FD6 /* Build configuration list for PBXProject "MacVitals" */;
@@ -203,6 +299,7 @@
 				D85C52062D7FB76000EE9FD6 /* MacVitals */,
 				D85C52172D7FB76100EE9FD6 /* MacVitalsTests */,
 				D85C52212D7FB76100EE9FD6 /* MacVitalsUITests */,
+				D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D85C52202D7FB76100EE9FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85C52482D7FB88D00EE9FD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D85C52462D7FB88D00EE9FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = D85C52062D7FB76000EE9FD6 /* MacVitals */;
 			targetProxy = D85C52232D7FB76100EE9FD6 /* PBXContainerItemProxy */;
+		};
+		D85C525C2D7FB88F00EE9FD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */;
+			targetProxy = D85C525B2D7FB88F00EE9FD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,6 +625,64 @@
 			};
 			name = Release;
 		};
+		D85C52602D7FB88F00EE9FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MCWidget/MCWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3837AQ584F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MCWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MCWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitals.MCWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D85C52612D7FB88F00EE9FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MCWidget/MCWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3837AQ584F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MCWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MCWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitals.MCWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,6 +718,15 @@
 			buildConfigurations = (
 				D85C52332D7FB76100EE9FD6 /* Debug */,
 				D85C52342D7FB76100EE9FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85C525F2D7FB88F00EE9FD6 /* Build configuration list for PBXNativeTarget "MCWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85C52602D7FB88F00EE9FD6 /* Debug */,
+				D85C52612D7FB88F00EE9FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
