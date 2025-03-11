@@ -57,6 +57,7 @@
 		D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MCWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D88799E12D80BABD00FC8A8D /* MacVitalsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MacVitalsPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -73,16 +74,6 @@
 		D85C52092D7FB76000EE9FD6 /* MacVitals */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MacVitals;
-			sourceTree = "<group>";
-		};
-		D85C521B2D7FB76100EE9FD6 /* MacVitalsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MacVitalsTests;
-			sourceTree = "<group>";
-		};
-		D85C52252D7FB76100EE9FD6 /* MacVitalsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MacVitalsUITests;
 			sourceTree = "<group>";
 		};
 		D85C52502D7FB88D00EE9FD6 /* MCWidget */ = {
@@ -132,9 +123,8 @@
 		D85C51FE2D7FB76000EE9FD6 = {
 			isa = PBXGroup;
 			children = (
+				D88799E12D80BABD00FC8A8D /* MacVitalsPackage */,
 				D85C52092D7FB76000EE9FD6 /* MacVitals */,
-				D85C521B2D7FB76100EE9FD6 /* MacVitalsTests */,
-				D85C52252D7FB76100EE9FD6 /* MacVitalsUITests */,
 				D85C52502D7FB88D00EE9FD6 /* MCWidget */,
 				D85C524B2D7FB88D00EE9FD6 /* Frameworks */,
 				D85C52082D7FB76000EE9FD6 /* Products */,
@@ -201,9 +191,6 @@
 			dependencies = (
 				D85C521A2D7FB76100EE9FD6 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D85C521B2D7FB76100EE9FD6 /* MacVitalsTests */,
-			);
 			name = MacVitalsTests;
 			packageProductDependencies = (
 			);
@@ -223,9 +210,6 @@
 			);
 			dependencies = (
 				D85C52242D7FB76100EE9FD6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D85C52252D7FB76100EE9FD6 /* MacVitalsUITests */,
 			);
 			name = MacVitalsUITests;
 			packageProductDependencies = (
