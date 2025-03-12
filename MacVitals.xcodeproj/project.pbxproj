@@ -13,20 +13,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D85C52192D7FB76100EE9FD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D85C51FF2D7FB76000EE9FD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D85C52062D7FB76000EE9FD6;
-			remoteInfo = MacVitals;
-		};
-		D85C52232D7FB76100EE9FD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D85C51FF2D7FB76000EE9FD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D85C52062D7FB76000EE9FD6;
-			remoteInfo = MacVitals;
-		};
 		D85C525B2D7FB88F00EE9FD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D85C51FF2D7FB76000EE9FD6 /* Project object */;
@@ -52,11 +38,10 @@
 
 /* Begin PBXFileReference section */
 		D85C52072D7FB76000EE9FD6 /* MacVitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacVitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D85C52182D7FB76100EE9FD6 /* MacVitalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacVitalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D85C52222D7FB76100EE9FD6 /* MacVitalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacVitalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MCWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D860D3732D820066004B24DB /* MacVitals.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MacVitals.xctestplan; sourceTree = "<group>"; };
 		D88799E12D80BABD00FC8A8D /* MacVitalsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MacVitalsPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,20 +79,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D85C52152D7FB76100EE9FD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D85C521F2D7FB76100EE9FD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D85C52472D7FB88D00EE9FD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,6 +94,7 @@
 		D85C51FE2D7FB76000EE9FD6 = {
 			isa = PBXGroup;
 			children = (
+				D860D3732D820066004B24DB /* MacVitals.xctestplan */,
 				D88799E12D80BABD00FC8A8D /* MacVitalsPackage */,
 				D85C52092D7FB76000EE9FD6 /* MacVitals */,
 				D85C52502D7FB88D00EE9FD6 /* MCWidget */,
@@ -135,8 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				D85C52072D7FB76000EE9FD6 /* MacVitals.app */,
-				D85C52182D7FB76100EE9FD6 /* MacVitalsTests.xctest */,
-				D85C52222D7FB76100EE9FD6 /* MacVitalsUITests.xctest */,
 				D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */,
 			);
 			name = Products;
@@ -178,46 +148,6 @@
 			productReference = D85C52072D7FB76000EE9FD6 /* MacVitals.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D85C52172D7FB76100EE9FD6 /* MacVitalsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D85C522F2D7FB76100EE9FD6 /* Build configuration list for PBXNativeTarget "MacVitalsTests" */;
-			buildPhases = (
-				D85C52142D7FB76100EE9FD6 /* Sources */,
-				D85C52152D7FB76100EE9FD6 /* Frameworks */,
-				D85C52162D7FB76100EE9FD6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D85C521A2D7FB76100EE9FD6 /* PBXTargetDependency */,
-			);
-			name = MacVitalsTests;
-			packageProductDependencies = (
-			);
-			productName = MacVitalsTests;
-			productReference = D85C52182D7FB76100EE9FD6 /* MacVitalsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D85C52212D7FB76100EE9FD6 /* MacVitalsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D85C52322D7FB76100EE9FD6 /* Build configuration list for PBXNativeTarget "MacVitalsUITests" */;
-			buildPhases = (
-				D85C521E2D7FB76100EE9FD6 /* Sources */,
-				D85C521F2D7FB76100EE9FD6 /* Frameworks */,
-				D85C52202D7FB76100EE9FD6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D85C52242D7FB76100EE9FD6 /* PBXTargetDependency */,
-			);
-			name = MacVitalsUITests;
-			packageProductDependencies = (
-			);
-			productName = MacVitalsUITests;
-			productReference = D85C52222D7FB76100EE9FD6 /* MacVitalsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85C525F2D7FB88F00EE9FD6 /* Build configuration list for PBXNativeTarget "MCWidgetExtension" */;
@@ -253,14 +183,6 @@
 					D85C52062D7FB76000EE9FD6 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					D85C52172D7FB76100EE9FD6 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = D85C52062D7FB76000EE9FD6;
-					};
-					D85C52212D7FB76100EE9FD6 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = D85C52062D7FB76000EE9FD6;
-					};
 					D85C52492D7FB88D00EE9FD6 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -281,8 +203,6 @@
 			projectRoot = "";
 			targets = (
 				D85C52062D7FB76000EE9FD6 /* MacVitals */,
-				D85C52172D7FB76100EE9FD6 /* MacVitalsTests */,
-				D85C52212D7FB76100EE9FD6 /* MacVitalsUITests */,
 				D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */,
 			);
 		};
@@ -290,20 +210,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		D85C52052D7FB76000EE9FD6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D85C52162D7FB76100EE9FD6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D85C52202D7FB76100EE9FD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,20 +233,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D85C52142D7FB76100EE9FD6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D85C521E2D7FB76100EE9FD6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D85C52462D7FB88D00EE9FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,16 +243,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D85C521A2D7FB76100EE9FD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D85C52062D7FB76000EE9FD6 /* MacVitals */;
-			targetProxy = D85C52192D7FB76100EE9FD6 /* PBXContainerItemProxy */;
-		};
-		D85C52242D7FB76100EE9FD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D85C52062D7FB76000EE9FD6 /* MacVitals */;
-			targetProxy = D85C52232D7FB76100EE9FD6 /* PBXContainerItemProxy */;
-		};
 		D85C525C2D7FB88F00EE9FD6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */;
@@ -541,74 +423,6 @@
 			};
 			name = Release;
 		};
-		D85C52302D7FB76100EE9FD6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3837AQ584F;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitalsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacVitals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacVitals";
-			};
-			name = Debug;
-		};
-		D85C52312D7FB76100EE9FD6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3837AQ584F;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitalsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacVitals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacVitals";
-			};
-			name = Release;
-		};
-		D85C52332D7FB76100EE9FD6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3837AQ584F;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitalsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = MacVitals;
-			};
-			name = Debug;
-		};
-		D85C52342D7FB76100EE9FD6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3837AQ584F;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitalsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = MacVitals;
-			};
-			name = Release;
-		};
 		D85C52602D7FB88F00EE9FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -684,24 +498,6 @@
 			buildConfigurations = (
 				D85C522D2D7FB76100EE9FD6 /* Debug */,
 				D85C522E2D7FB76100EE9FD6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D85C522F2D7FB76100EE9FD6 /* Build configuration list for PBXNativeTarget "MacVitalsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D85C52302D7FB76100EE9FD6 /* Debug */,
-				D85C52312D7FB76100EE9FD6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D85C52322D7FB76100EE9FD6 /* Build configuration list for PBXNativeTarget "MacVitalsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D85C52332D7FB76100EE9FD6 /* Debug */,
-				D85C52342D7FB76100EE9FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
