@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "A2C5B735-1C51-4098-A404-673C8377F7AA",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MacVitals.xcodeproj",
+      "identifier" : "D85C52062D7FB76000EE9FD6",
+      "name" : "MacVitals"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MacVitalsPackage",
+        "identifier" : "GPUStatsTests",
+        "name" : "GPUStatsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
