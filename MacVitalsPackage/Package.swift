@@ -23,5 +23,10 @@ let package = Package(
             dependencies: ["MacVitalsSystemStats"],
             path: "Tests/GPUStatsTests"
         ),
+        .testTarget(
+            name: "CPUStatsTests",
+            dependencies: ["MacVitalsSystemStats"],
+            path: "Tests/CPUStatsTests"
+        ),
     ]
 )
