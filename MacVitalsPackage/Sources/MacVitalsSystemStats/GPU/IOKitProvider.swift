@@ -20,8 +20,10 @@ public struct DefaultIOKitProvider: IOKitProvider {
             var properties: Unmanaged<CFMutableDictionary>?
             if canReadRegistryProperties(service: service, properties: &properties) {
                 let dict = properties!.takeRetainedValue() as NSDictionary
-                if let util = dict["Device Utilization %"] as? Int {
-                    return "\(util)%"
+                if let performanceStats = dict["PerformanceStatistics"] as? NSDictionary {
+                    if let util = performanceStats["Device Utilization %"] as? NSNumber {
+                        return "\(util.intValue)%"
+                    }
                 }
             }
             return nil
