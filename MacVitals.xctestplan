@@ -19,6 +19,13 @@
     {
       "target" : {
         "containerPath" : "container:MacVitalsPackage",
+        "identifier" : "CPUStatsTests",
+        "name" : "CPUStatsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MacVitalsPackage",
         "identifier" : "GPUStatsTests",
         "name" : "GPUStatsTests"
       }
