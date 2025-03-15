@@ -15,7 +15,14 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
+            name: "MacVitalsConstants",
+            path: "Sources/MacVitalsConstants"
+        ),
+        .target(
             name: "MacVitalsSystemStats",
+            dependencies: [
+                "MacVitalsConstants",
+            ],
             path: "Sources/MacVitalsSystemStats"
         ),
         .testTarget(
@@ -27,6 +34,11 @@ let package = Package(
             name: "CPUStatsTests",
             dependencies: ["MacVitalsSystemStats"],
             path: "Tests/CPUStatsTests"
+        ),
+        .testTarget(
+            name: "RAMStatsTests",
+            dependencies: ["MacVitalsSystemStats"],
+            path: "Tests/RAMStatsTests"
         ),
     ]
 )

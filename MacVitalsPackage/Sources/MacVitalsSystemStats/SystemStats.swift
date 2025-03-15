@@ -2,13 +2,16 @@ public struct SystemStats {
     
     private let gpuStats: GPUStats
     private let cpuStats: CPUStats
+    private let ramStats: RAMStats
     
     public init(
         gpuStats: GPUStats = GPUStats(),
-        cpuStats: CPUStats = CPUStats()
+        cpuStats: CPUStats = CPUStats(),
+        ramStats: RAMStats = RAMStats()
     ) {
         self.gpuStats = gpuStats
         self.cpuStats = cpuStats
+        self.ramStats = ramStats
     }
     
     public func getGPUStats() -> GPUInfo {
@@ -17,6 +20,10 @@ public struct SystemStats {
     
     public func getCPUStats() -> CPUInfo {
         cpuStats.getCPUUsage()
+    }
+    
+    public func getRAMStats() -> RAMInfo {
+        ramStats.getRAMInfo()
     }
 }
 
