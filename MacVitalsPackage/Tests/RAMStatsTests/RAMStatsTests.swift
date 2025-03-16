@@ -40,39 +40,72 @@ struct RAMStatsTests {
         
         #expect(result.usedRam == RAMStatsTestHelpers.usedRam)
     }
-}
-
-enum RAMStatsTestHelpers {
-    static var maxRam: String {
-        String(
-            format: Constants.Strings.toTwoDecimals,
-            Double(ProcessInfo.processInfo.physicalMemory) / Constants.Numbers.conversionToGB
-        )
-    }
     
-    static var usedRam: String {
+    @Test func givenRAMStats_whenFetchingInfo_thenTheFreeRamIsEqualToMockedRAMStats() {
         let mock = MockVirtualMemoryStatsProvider()
-        mock.stats.active_count = 1_000_000
-        mock.stats.wire_count = 500_000
-        mock.stats.compressor_page_count = 250_000
+        mock.stats.free_count = 1_000_000
+        mock.stats.inactive_count = 500_000
         mock.pageSize = 4096
         mock.result = KERN_SUCCESS
         
-        let appMemory = Double(mock.stats.active_count) * Double(mock.pageSize)
-        let wiredMemory = Double(mock.stats.wire_count) * Double(mock.pageSize)
-        let compressedMemory = Double(mock.stats.compressor_page_count) * Double(mock.pageSize)
-        let totalUsedMemory = (appMemory + wiredMemory + compressedMemory) / Constants.Numbers.conversionToGB
+        let sut = RAMStats(virtualMemoryStatsProvider: mock)
         
-        return String(format: Constants.Strings.toTwoDecimals, totalUsedMemory)
+        let result = sut.getRAMInfo()
+        
+        #expect(result.freeRam == RAMStatsTestHelpers.freeRam)
     }
-}
-
-class MockVirtualMemoryStatsProvider: VirtualMemoryStatsProvider {
-    var pageSize: vm_size_t = 1
-    var result: Int32 = 1
-    var stats = vm_statistics64()
     
-    func returnVMStats() -> VirtualMemoryStats {
-        return VirtualMemoryStats(stats: stats, pageSize: pageSize, result: result)
+    @Test func givenRAMStats_whenFetchingInfo_thenTheWiredRamIsEqualToMockedRAMStats() {
+        let mock = MockVirtualMemoryStatsProvider()
+        mock.stats.wire_count = 1_000_000
+        mock.pageSize = 4096
+        mock.result = KERN_SUCCESS
+        
+        let sut = RAMStats(virtualMemoryStatsProvider: mock)
+        
+        let result = sut.getRAMInfo()
+        
+        #expect(result.wiredRam == RAMStatsTestHelpers.wiredRam)
+    }
+    
+    
+    @Test func givenRAMStats_whenFetchingInfo_thenTheCompressedRamIsEqualToMockedRAMStats() {
+        let mock = MockVirtualMemoryStatsProvider()
+        mock.stats.compressor_page_count = 1_000_000
+        mock.pageSize = 4096
+        mock.result = KERN_SUCCESS
+        
+        let sut = RAMStats(virtualMemoryStatsProvider: mock)
+        
+        let result = sut.getRAMInfo()
+        
+        #expect(result.compressedRam == RAMStatsTestHelpers.compressedRam)
+    }
+    
+    @Test func givenRAMStats_whenFetchingInfo_thenTheCachedRamIsEqualToMockedRAMStats() {
+        let mock = MockVirtualMemoryStatsProvider()
+        mock.stats.inactive_count = 1_000_000
+        mock.pageSize = 4096
+        mock.result = KERN_SUCCESS
+        
+        let sut = RAMStats(virtualMemoryStatsProvider: mock)
+        
+        let result = sut.getRAMInfo()
+        
+        #expect(result.cachedRam == RAMStatsTestHelpers.cachedRam)
+    }
+    
+    @Test func givenRAMStats_whenFetchingInfo_thenTheSwapUsedRamIsEqualToMockedRAMStats() {
+        let mock = MockVirtualMemoryStatsProvider()
+        mock.stats.swapins = 1_000_000
+        mock.stats.swapouts = 1_000_000
+        mock.pageSize = 4096
+        mock.result = KERN_SUCCESS
+        
+        let sut = RAMStats(virtualMemoryStatsProvider: mock)
+        
+        let result = sut.getRAMInfo()
+        
+        #expect(result.swapUsedRam == RAMStatsTestHelpers.swapUsedRam)
     }
 }
