@@ -67,28 +67,6 @@ struct GPUStatsTests {
     }
 }
 
-struct MockMetalInfoProvider: MetalProvider {
-    var deviceName: String?
-    var deviceMemory: String?
-    
-    func getDeviceName() -> String? {
-        deviceName
-    }
-    
-    func getDeviceMemory() -> String? {
-        deviceMemory
-    }
-}
-
-struct MockIOKitProvider: IOKitProvider {
-    var gpuUtilization: String?
-    
-    func getGPUUtilization() -> String? {
-        gpuUtilization
-    }
-}
-
-
 private extension String {
     static let mockDeviceName = "Mock GPU"
     static let mockDeviceMemory = "12.00 GB"

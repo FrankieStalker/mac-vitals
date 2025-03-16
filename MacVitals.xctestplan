@@ -29,6 +29,13 @@
         "identifier" : "GPUStatsTests",
         "name" : "GPUStatsTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MacVitalsPackage",
+        "identifier" : "RAMStatsTests",
+        "name" : "RAMStatsTests"
+      }
     }
   ],
   "version" : 1

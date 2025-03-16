@@ -1,5 +1,7 @@
 import Metal
 
+import MacVitalsConstants
+
 public protocol MetalProvider {
     func getDeviceName() -> String?
     func getDeviceMemory() -> String?
@@ -15,8 +17,8 @@ public struct DefaultMetalProvider: MetalProvider {
     
     public func getDeviceMemory() -> String? {
         if let device = MTLCreateSystemDefaultDevice() {
-            let memory = Double(device.recommendedMaxWorkingSetSize) / (1024 * 1024 * 1024)
-            return String(format: "%.2f GB", memory)
+            let memory = Double(device.recommendedMaxWorkingSetSize) / Constants.Numbers.conversionToGB
+            return String(format: Constants.Strings.toTwoDecimals, memory)
         }
         return nil
     }
