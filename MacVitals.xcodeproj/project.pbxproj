@@ -7,21 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D85C524D2D7FB88D00EE9FD6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */; };
-		D85C524F2D7FB88D00EE9FD6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */; };
-		D85C525D2D7FB88F00EE9FD6 /* MCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D860D3752D822EC3004B24DB /* MacVitalsSystemStats in Frameworks */ = {isa = PBXBuildFile; productRef = D860D3742D822EC3004B24DB /* MacVitalsSystemStats */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D85C525B2D7FB88F00EE9FD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D85C51FF2D7FB76000EE9FD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D85C52492D7FB88D00EE9FD6;
-			remoteInfo = MCWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D85C52622D7FB88F00EE9FD6 /* Embed Foundation Extensions */ = {
@@ -30,7 +17,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D85C525D2D7FB88F00EE9FD6 /* MCWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,35 +25,28 @@
 
 /* Begin PBXFileReference section */
 		D85C52072D7FB76000EE9FD6 /* MacVitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacVitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MCWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D860D3732D820066004B24DB /* MacVitals.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MacVitals.xctestplan; sourceTree = "<group>"; };
 		D88799E12D80BABD00FC8A8D /* MacVitalsPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MacVitalsPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D85C525E2D7FB88F00EE9FD6 /* Exceptions for "MCWidget" folder in "MCWidgetExtension" target */ = {
+		D892C81B2D88B76A0080BB51 /* Exceptions for "MacVitals" folder in "MacVitals" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */;
+			target = D85C52062D7FB76000EE9FD6 /* MacVitals */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D85C52092D7FB76000EE9FD6 /* MacVitals */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MacVitals;
-			sourceTree = "<group>";
-		};
-		D85C52502D7FB88D00EE9FD6 /* MCWidget */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D85C525E2D7FB88F00EE9FD6 /* Exceptions for "MCWidget" folder in "MCWidgetExtension" target */,
+				D892C81B2D88B76A0080BB51 /* Exceptions for "MacVitals" folder in "MacVitals" target */,
 			);
-			path = MCWidget;
+			path = MacVitals;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -81,15 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D85C52472D7FB88D00EE9FD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D85C524F2D7FB88D00EE9FD6 /* SwiftUI.framework in Frameworks */,
-				D85C524D2D7FB88D00EE9FD6 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,7 +69,6 @@
 				D860D3732D820066004B24DB /* MacVitals.xctestplan */,
 				D88799E12D80BABD00FC8A8D /* MacVitalsPackage */,
 				D85C52092D7FB76000EE9FD6 /* MacVitals */,
-				D85C52502D7FB88D00EE9FD6 /* MCWidget */,
 				D85C524B2D7FB88D00EE9FD6 /* Frameworks */,
 				D85C52082D7FB76000EE9FD6 /* Products */,
 			);
@@ -109,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				D85C52072D7FB76000EE9FD6 /* MacVitals.app */,
-				D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +85,6 @@
 		D85C524B2D7FB88D00EE9FD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D85C524C2D7FB88D00EE9FD6 /* WidgetKit.framework */,
 				D85C524E2D7FB88D00EE9FD6 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
@@ -138,7 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D85C525C2D7FB88F00EE9FD6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D85C52092D7FB76000EE9FD6 /* MacVitals */,
@@ -151,28 +117,6 @@
 			productReference = D85C52072D7FB76000EE9FD6 /* MacVitals.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D85C525F2D7FB88F00EE9FD6 /* Build configuration list for PBXNativeTarget "MCWidgetExtension" */;
-			buildPhases = (
-				D85C52462D7FB88D00EE9FD6 /* Sources */,
-				D85C52472D7FB88D00EE9FD6 /* Frameworks */,
-				D85C52482D7FB88D00EE9FD6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D85C52502D7FB88D00EE9FD6 /* MCWidget */,
-			);
-			name = MCWidgetExtension;
-			packageProductDependencies = (
-			);
-			productName = MCWidgetExtension;
-			productReference = D85C524A2D7FB88D00EE9FD6 /* MCWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,9 +128,6 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					D85C52062D7FB76000EE9FD6 = {
-						CreatedOnToolsVersion = 16.2;
-					};
-					D85C52492D7FB88D00EE9FD6 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -206,20 +147,12 @@
 			projectRoot = "";
 			targets = (
 				D85C52062D7FB76000EE9FD6 /* MacVitals */,
-				D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D85C52052D7FB76000EE9FD6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D85C52482D7FB88D00EE9FD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,22 +169,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D85C52462D7FB88D00EE9FD6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D85C525C2D7FB88F00EE9FD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D85C52492D7FB88D00EE9FD6 /* MCWidgetExtension */;
-			targetProxy = D85C525B2D7FB88F00EE9FD6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D85C522A2D7FB76100EE9FD6 /* Debug */ = {
@@ -311,7 +229,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx15.2;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -367,7 +285,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx15.2;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -386,6 +304,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacVitals/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,7 +314,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -413,6 +334,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacVitals/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,65 +344,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		D85C52602D7FB88F00EE9FD6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = MCWidget/MCWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3837AQ584F;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MCWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MCWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitals.MCWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		D85C52612D7FB88F00EE9FD6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = MCWidget/MCWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3837AQ584F;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MCWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MCWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frankiestalker.MacVitals.MCWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 17.6;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -501,15 +367,6 @@
 			buildConfigurations = (
 				D85C522D2D7FB76100EE9FD6 /* Debug */,
 				D85C522E2D7FB76100EE9FD6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D85C525F2D7FB88F00EE9FD6 /* Build configuration list for PBXNativeTarget "MCWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D85C52602D7FB88F00EE9FD6 /* Debug */,
-				D85C52612D7FB88F00EE9FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
