@@ -1,4 +1,6 @@
 import SwiftUI
+
+import Cocoa
 import ServiceManagement
 
 @main
@@ -25,9 +27,6 @@ struct MacVitalsApp: App {
         }
     }
 }
-
-import Cocoa
-import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem!
